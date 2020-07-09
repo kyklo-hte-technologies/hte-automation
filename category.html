@@ -15,130 +15,45 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no" />
     <style type="text/css">
-    .top-bar {
-    background-color: rgb(13, 89, 165);
-    }
-    .footer {
-    border-bottom-color: rgb(13, 89, 165);
-    }
-    .btn-secondary,
-    .btn-sub-primary {
-    background-color: rgb(13, 89, 165) !important;
-    /* important to overwrite BS :hover, hovering effect is done by opacity */
-    border-color: rgb(13, 89, 165) !important;
-    /* important to overwrite BS :hover, hovering effect is done by opacity */
-    }
-    .sidemenu .user-zone {
-    border-top-color: rgb(13, 89, 165);
-    }
-    .sidemenu .btn-user-zone-arrow {
-    border-color: rgb(13, 89, 165);
-    }
-    .plus-minus-input.highlighted.non-zero {
-    border-color: rgb(13, 89, 165);
-    background-color: rgb(13, 89, 165);
-    }
-    .categories-tree .collapse-indicator:not(.collapsed):after {
-    color: rgb(13, 89, 165);
-    }
-    .checkbox input[type="&quot;checkbox&quot;"]:checked + label:before {
-    border-color: rgb(13, 89, 165);
-    background-color: rgb(13, 89, 165);
-    }
-    .loader {
-    padding-bottom: 1rem;
-    }
-    .loader-image {
-    border: 5px solid slategray;
-    border-top: 5px solid rgb(13, 89, 165);
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    animation: spin 2s linear infinite;
-    }
+    .top-bar { background-color: rgb(13, 89, 165); }
+    .footer { border-bottom-color: rgb(13, 89, 165); }
+    .btn-secondary, .btn-sub-primary { background-color: rgb(13, 89, 165) !important;    /* important to overwrite BS :hover, hovering effect is done by opacity */ border-color: rgb(13, 89, 165) !important;    /* important to overwrite BS :hover, hovering effect is done by opacity */ }
+    .sidemenu .user-zone { border-top-color: rgb(13, 89, 165); }
+    .sidemenu .btn-user-zone-arrow { border-color: rgb(13, 89, 165); }
+    .plus-minus-input.highlighted.non-zero { border-color: rgb(13, 89, 165); background-color: rgb(13, 89, 165); }
+    .categories-tree .collapse-indicator:not(.collapsed):after { color: rgb(13, 89, 165); }
+    .checkbox input[type="&quot;checkbox&quot;"]:checked + label:before { border-color: rgb(13, 89, 165); background-color: rgb(13, 89, 165); }
+    .loader { padding-bottom: 1rem; }
+    .loader-image { border: 5px solid slategray; border-top: 5px solid rgb(13, 89, 165); border-radius: 50%; width: 25px; height: 25px; margin-left: auto; margin-right: auto; animation: spin 2s linear infinite; }
     @keyframes spin {
-    0% {
-    transform: rotate(0deg);
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
-    100% {
-    transform: rotate(360deg);
+    .colored-checkbox:checked + label:before { background: rgb(13, 89, 165); }
+    .colored-checkbox:hover + label:before { background: rgb(13, 89, 165); }
+    </style>
+    <style type="text/css">
+    h1.kyklo-hte-header { font-size: 5rem; text-align: center; margin: 45px 0; }
+    @media only screen and (max-width:768px) {
+      h1.kyklo-hte-header { font-size: 3rem; text-align: center; margin: 25px 0; }
     }
-    }
-    .colored-checkbox:checked + label:before {
-    background: rgb(13, 89, 165);
-    }
-    .colored-checkbox:hover + label:before {
-    background: rgb(13, 89, 165);
+    @media only screen and (max-width:320px) {
+      h1.kyklo-hte-header { font-size: 2.5rem; text-align: center; margin: 20px 0; }
     }
     </style>
     <style type="text/css">
-    h1.kyklo-hte-header {
-    font-size: 5rem;
-    text-align: center;
-    margin: 45px 0;
+    .grow img { transition: all 0.2s ease-in-out; }
+    .grow:hover img { transform: scale(1.1); }
+    .product-cell { padding: 10px; }
+    .product-cell > a { width: 100%; white-space: normal; background-color: white; padding: 5px; }
+    .img-product { height: 110px; padding: 5px 0; }
+    .img-product img { max-height: 100px; margin: 0 auto; }
+    .range-name { font-size: 0.9em; font-weight: bold; margin: 0; }
+    @media (max-width:1279px) {
+      .range-name { font-size: 0.85em; font-weight: bold; margin: 0; }
     }
-    @media only screen and (max-width: 768px) {
-    h1.kyklo-hte-header {
-    font-size: 3rem;
-    text-align: center;
-    margin: 25px 0;
-    }
-    }
-    @media only screen and (max-width: 320px) {
-    h1.kyklo-hte-header {
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px 0;
-    }
-    }
-    </style>
-    <style type="text/css">
-    .grow img {
-    transition: all 0.2s ease-in-out;
-    }
-    .grow:hover img {
-    transform: scale(1.1);
-    }
-    .product-cell {
-    padding: 10px;
-    }
-    .product-cell > a {
-    width: 100%;
-    white-space: normal;
-    background-color: white;
-    padding: 5px;
-    }
-    .img-product {
-    height: 110px;
-    padding: 5px 0;
-    }
-    .img-product img {
-    max-height: 100px;
-    margin: 0 auto;
-    }
-    .range-name {
-    font-size: 0.9em;
-    font-weight: bold;
-    margin: 0;
-    }
-    @media (max-width: 1279px) {
-    .range-name {
-    font-size: 0.85em;
-    font-weight: bold;
-    margin: 0;
-    }
-    }
-    .standard-height {
-    height: 170px;
-    }
-    .flex-center-vertically {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 50px;
-    }
+    .standard-height { height: 170px; }
+    .flex-center-vertically { display: flex; justify-content: center; flex-direction: column; height: 50px; }
     </style>
     <link rel="shortcut icon" type="image/x-icon" href="media/pictures/layout/logo-hte-automation.png" />
     <link rel="apple-touch-icon" type="image/png" href="media/pictures/layout/logo-hte-corporate.png" />
